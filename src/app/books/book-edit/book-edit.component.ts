@@ -47,8 +47,12 @@ export class BookEditComponent implements OnInit, OnDestroy {
   }
 
   onCancel(){
-    if (this.formHasChanged() && confirm("Any changes  won't be saved!"))
+    if (this.formHasChanged()) {
+      if (confirm("Any changes  won't be saved!"))
+        this.closeModal();
+    } else {
       this.closeModal();
+    }
   }
 
   private formHasChanged(){

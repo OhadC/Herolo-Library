@@ -1,7 +1,7 @@
 <app-modal #modal>
   <div class="app-modal-header">
     <h4>
-      {{ editMode ? 'Edit ' + book.title : 'Add new book' }}
+      {{ editMode ? 'Edit ' + (book.title | onlyEnglish | smartCapitalize) : 'Add new book' }}
     </h4>
   </div>
   <div class="app-modal-body">
