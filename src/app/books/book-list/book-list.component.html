@@ -1,0 +1,12 @@
+<div class="row" style="margin-bottom: 12px">
+  <div class="col-xs-12">
+    <button class="btn btn-primary" (click)="onAdd()">Add new book</button>
+  </div>
+</div>
+
+<ul class="list-group">
+  <li app-book-item
+      class="list-group-item"
+      *ngFor="let book of books; let i = index"
+      [book]="book" [index]="i"></li>
+</ul>

@@ -1,0 +1,7 @@
+<h4 class="list-group-item-heading">
+  {{ book.title | onlyEnglish | smartCapitalize }}
+  {{ " / " + book.author }}
+</h4>
+<p class="list-group-item-text">{{ book.date | date }}</p>
+<button class="btn btn-warning" (click)="onEdit()">Edit</button>
+<button class="btn btn-danger" (click)="onDelete()">Delete</button>
