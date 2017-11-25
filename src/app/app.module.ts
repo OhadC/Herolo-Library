@@ -3,23 +3,20 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { BooksService } from './books/books.service';
+import { CoreModule } from './core/core.module';
 import { BooksModule } from './books/books.module';
-import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
+    CoreModule,
     BooksModule,
-    SharedModule
   ],
-  providers: [BooksService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

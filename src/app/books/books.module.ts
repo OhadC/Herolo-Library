@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { BooksComponent } from './books.component';
 import { BookEditComponent } from './book-edit/book-edit.component';
 import { BookListComponent } from './book-list/book-list.component';
 import { BookItemComponent } from './book-list/book-item/book-item.component';
-import { ReactiveFormsModule } from '@angular/forms';
 import { OnlyEnglishPipe } from './shared/only-english.pipe';
 import { SmartCapitalizePipe } from './shared/smart-capitalize.pipe';
 import { SharedModule } from '../shared/shared.module';
